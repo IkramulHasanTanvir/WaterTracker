@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:water_tracker/bottom_nav_bar.dart';
+import 'package:water_tracker/screen/home_screen.dart';
 
 class WaterTrackerApp extends StatelessWidget {
   const WaterTrackerApp({super.key});
@@ -8,7 +8,7 @@ class WaterTrackerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const BottomNavBar(),
+      home:  HomePage(),
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.grey.shade300,
         appBarTheme: AppBarTheme(
