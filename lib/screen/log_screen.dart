@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:water_tracker/models/water_tracker.dart';
-import 'package:water_tracker/widgets/Drink_tile.dart';
+import 'package:water_tracker/ui/Drink_tile.dart';
 
 class LogScreen extends StatelessWidget {
   const LogScreen({

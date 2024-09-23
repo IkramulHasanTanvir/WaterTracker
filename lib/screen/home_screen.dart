@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:water_tracker/models/water_tracker.dart';
-import 'package:water_tracker/widgets/Drink_tile.dart';
-import 'package:water_tracker/widgets/build_dialog.dart';
-import 'package:water_tracker/widgets/build_header.dart';
-import 'package:water_tracker/widgets/build_sheet.dart';
-import 'package:water_tracker/widgets/display_water_counter.dart';
+import 'package:water_tracker/ui/Drink_tile.dart';
+import 'package:water_tracker/ui/build_dialog.dart';
+import 'package:water_tracker/ui/build_header.dart';
+import 'package:water_tracker/ui/build_sheet.dart';
+import 'package:water_tracker/ui/display_water_counter.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({

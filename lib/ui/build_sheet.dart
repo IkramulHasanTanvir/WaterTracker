@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:water_tracker/widgets/glasses.dart';
-import 'package:water_tracker/widgets/neumorphism_box.dart';
+import 'package:water_tracker/ui/glasses.dart';
+import 'package:water_tracker/ui/neumorphism_box.dart';
 
 class BuildSheet extends StatelessWidget {
   const BuildSheet({

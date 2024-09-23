@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:water_tracker/models/water_tracker.dart';
 import 'package:water_tracker/screen/home_screen.dart';
 import 'package:water_tracker/screen/log_screen.dart';
-import 'package:water_tracker/widgets/build_bottom_nav.dart';
+import 'package:water_tracker/ui/build_bottom_nav.dart';
 
 class ScreenControl extends StatefulWidget {
   const ScreenControl({super.key});
