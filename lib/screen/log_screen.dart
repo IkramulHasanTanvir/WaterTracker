@@ -13,35 +13,35 @@ class LogScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(24.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(left: 24.0,top: 24,bottom: 16),
+            child: Text(
               'Drink Log',
               style: TextStyle(fontSize: 24),
             ),
-            Expanded(
-              child: waterTrackerList.isEmpty
-                  ? const Center(
-                      child: Text('No drinks logged yet'),
-                    )
-                  : ListView.builder(
-                      itemCount: waterTrackerList.length,
-                      itemBuilder: (context, index) {
-                        WaterTracker tracker = waterTrackerList[index];
-                        return DrinkTile(
-                          glasses: tracker.onOfGlasses,
-                          time:
-                              '${tracker.dateTime.hour}:${tracker.dateTime.minute}',
-                          date:
-                              '${tracker.dateTime.day}/${tracker.dateTime.month}/${tracker.dateTime.year}',
-                        );
-                      }),
-            ),
-          ],
-        ),
+          ),
+          Expanded(
+            child: waterTrackerList.isEmpty
+                ? const Center(
+                    child: Text('No drinks logged yet'),
+                  )
+                : ListView.builder(
+                    itemCount: waterTrackerList.length,
+                    itemBuilder: (context, index) {
+                      WaterTracker tracker = waterTrackerList[index];
+                      return DrinkTile(
+                        glasses: tracker.onOfGlasses,
+                        time:
+                            '${tracker.dateTime.hour}:${tracker.dateTime.minute}',
+                        date:
+                            '${tracker.dateTime.day}/${tracker.dateTime.month}/${tracker.dateTime.year}',
+                      );
+                    }),
+          ),
+        ],
       ),
     );
   }
